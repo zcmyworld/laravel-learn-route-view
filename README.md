@@ -6,6 +6,14 @@
 
 ## 实现一，返回简单字符串
 
+开始之前，请在你的 nginx 配置里加上：
+
+	location / {
+		try_files $uri $uri/ /index.php?$query_string;
+	}
+
+
+
 在 application 目录下创建文件routes.php
 
 	<?php
@@ -429,4 +437,4 @@ View类中的content属性以字符串的形式保存整个视图文件。
 	* |- response.php
 	* |- route.php
 	* |- router.php
-	* |- view.php
+	* |- view.phpJ
