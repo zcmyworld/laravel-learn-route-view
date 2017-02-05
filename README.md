@@ -410,3 +410,23 @@ View类中的content属性以字符串的形式保存整个视图文件。
     }
 
 在 get 方法中完成了视图文件的数据绑定
+
+整个框架项目结构形如：
+
+* application
+	* |- config
+		* |-applicationi.php
+	* |- views
+		* |-home
+			* index.php
+	* |- routes.php
+* public
+	* |- index.php
+* system
+	* |- config.php
+	* |- loader.php
+	* |- request.php
+	* |- response.php
+	* |- route.php
+	* |- router.php
+	* |- view.php
